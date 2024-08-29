@@ -1,0 +1,12 @@
+<div class="card-container">
+  <a
+    [routerLink]="['/product', product.id]"
+    class="card"
+    *ngFor="let product of productList"
+  >
+    <div class="image-container">
+      <img [src]="product.image" />
+    </div>
+    <div>{{ truncateText(product.title, 50) }}</div>
+  </a>
+</div>

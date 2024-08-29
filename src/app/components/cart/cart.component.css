@@ -1,0 +1,9 @@
+.container-item {
+	width: 150px;
+	height: auto;
+	object-fit: contain;
+}
+img {
+	width: 100%;
+	height: 100%;
+}

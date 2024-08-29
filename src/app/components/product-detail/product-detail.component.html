@@ -1,0 +1,16 @@
+<div *ngIf="!isLoading" class="container">
+	<div class="container-image">
+		<img [src]="product.image" />
+	</div>
+	<div>
+		<h2>{{product.title}}</h2>
+		<h3>{{product.category}}</h3>
+		<article style="max-width: 500px;">
+			{{product.description}}
+		</article>
+		<h2>{{product.price | currency}}</h2>
+		<button class="btn" (click)="addToCart()">
+			Add To Cart
+		</button>
+	</div>
+</div>

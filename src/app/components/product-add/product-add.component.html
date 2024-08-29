@@ -1,0 +1,39 @@
+<div>
+  <form (ngSubmit)="onSubmit()">
+    <label for="fname">Name</label>
+    <input
+      [(ngModel)]="dataForm.title"
+      type="text"
+      id="fname"
+      name="title"
+      placeholder="product name"
+    />
+
+    <label for="fprice">Price</label>
+    <input
+      [(ngModel)]="dataForm.price"
+      type="number"
+      id="fprice"
+      name="price"
+      placeholder="product price"
+    />
+
+    <label for="fcategory">Category</label>
+    <select [(ngModel)]="dataForm.category" id="fcategory" name="fcategory">
+      <option value="electronics">Electronics</option>
+      <option value="men's clothing">men's clothing</option>
+      <option value="women's clothing">Women's clothing</option>
+    </select>
+
+    <label for="fdesc">Description</label>
+    <input
+      [(ngModel)]="dataForm.description"
+      type="text"
+      id="fdesc"
+      name="fdesc"
+      placeholder="product description"
+    />
+
+    <input type="submit" value="Submit" />
+  </form>
+</div>

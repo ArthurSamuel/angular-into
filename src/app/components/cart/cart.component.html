@@ -1,0 +1,22 @@
+<table border="1px solid black">
+	<thead>
+		<tr>
+			<td [width]="150"></td>
+			<td [width]="200">Name</td>
+			<td [width]="350">Desc</td>
+			<td [width]="200">Price</td>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let productCart of getCartItems()">
+			<td [width]="150">
+				<div class="container-item">
+					<img [src]="productCart.image" />
+				</div>
+			</td>
+			<td [width]="200">{{productCart.title}}</td>
+			<td [width]="350">{{productCart.description}}</td>
+			<td [width]="200">{{productCart.price | currency}}</td>
+		</tr>
+	</tbody>
+</table>
